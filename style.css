@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  background-size: cover;
+  margin: 0;
+  overflow: hidden;
+}
+
+.paper {
+  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-size: 500px;
+  padding: 15px 40px;
+  box-shadow: 1px 8px 20px rgba(0,0,0,0.4);
+  position: absolute;
+  border-radius: 8px;
+  transform: rotateZ(calc(-5deg + (10deg * var(--index))));
+  font-family: 'Short Stack', cursive;
+  font-size: 1.2rem;
+  color: #333;
+  z-index: 1;
+}
+
+.paper.heart {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border-radius: 50%;
+  background: url('https://cdn.pixabay.com/photo/2018/01/22/01/08/heart-3097905_1280.jpg') center/contain no-repeat;
+  opacity: 0.7;
+}
+.pap-img {
+    object-fit: cover;
+}
+
+.paper.image img {
+  max-height: 180px;
+  width: 100%;
+}
+
+.paper.red {
+  background-color: #ffcccb;
+  color: #600;
+}
+
+.paper:nth-of-type(2n) {
+  transform: rotateZ(-7deg);
+}
+
+.paper:nth-of-type(3n) {
+  transform: rotateZ(10deg);
+}
